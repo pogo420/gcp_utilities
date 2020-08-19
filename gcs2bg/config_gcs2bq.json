@@ -1,0 +1,20 @@
+{
+"data-flow":
+    {
+    "project":"sublime-mission-251813",
+    "region": "us-central1",
+    "staging_location":"gs://etl_accelerator/stage",
+    "temp_location":"gs://etl_accelerator/temp",
+    "runner":"DataflowRunner"
+    },
+"big-query":
+    {
+    "project":"sublime-mission-251813",
+    "output_schema_binds": "local_timestamp:TIMESTAMP,user_id:STRING,device_type:STRING,chain_id:STRING,chain_name:STRING,store_id:STRING,store_name:STRING,state:STRING,postcode:STRING,dma_code:STRING,taxonomy:STRING",
+    "output_schema":"user_id:STRING,geoid:STRING,city:STRING,state:STRING,latitude:FLOAT,longitude:FLOAT,edu_none:FLOAT,edu_no_high_school:FLOAT,edu_some_high_school:FLOAT,edu_high_school:FLOAT,edu_some_college:FLOAT,edu_associate:FLOAT,edu_bachelor:FLOAT,edu_master:FLOAT,edu_phd:FLOAT,age_0_to_5:FLOAT,age_5_to_10:FLOAT,age_10_to_15:FLOAT,age_15_to_18:FLOAT,age_18_to_20:FLOAT,age_20:FLOAT,age_21:FLOAT,age_22_to_25:FLOAT,age_25_to_30:FLOAT,age_30_to_35:FLOAT,age_35_to_40:FLOAT,age_40_to_45:FLOAT,age_45_to_50:FLOAT,age_50_to_55:FLOAT,age_55_to_60:FLOAT,age_60_to_62:FLOAT,age_62_to_65:FLOAT,age_65_to_67:FLOAT,age_67_to_70:FLOAT,age_70_to_75:FLOAT,age_75_to_80:FLOAT,age_80_to_84:FLOAT,age_84_plus:FLOAT,eth_white:FLOAT,eth_black:FLOAT,eth_native_american:FLOAT,eth_asian:FLOAT,eth_hawaiian:FLOAT,eth_other:FLOAT,eth_mixed:FLOAT,gen_male:FLOAT,gen_female:FLOAT,inc_0_to_10:FLOAT,inc_10_to_15:FLOAT,inc_15_to_20:FLOAT,inc_20_to_25:FLOAT,inc_25_to_30:FLOAT,inc_30_to_35:FLOAT,inc_35_to_40:FLOAT,inc_40_to_45:FLOAT,inc_45_to_50:FLOAT,inc_50_to_60:FLOAT,inc_60_to_75:FLOAT,inc_75_to_100:FLOAT,inc_100_to_125:FLOAT,inc_125_to_150:FLOAT,inc_150_to_200:FLOAT,inc_200_plus:FLOAT",
+    "output_dataset":"etl_accelerator",
+    "output_table":"homes_testing",
+    "output_table_binds":"binds_testing",
+    "output_table_old":"sublime-mission-251813.etl_accelerator.practice_fromgcs"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "PROJECT_ID": "sublime-mission-251813",
+    "BQ_INPUT_TABLE": "sublime-mission-251813.bq2snowflake.input_crypto_clean",
+    "BQ_INPUT_TABLE_old": "sublime-mission-251813.bq2snowflake.bq_input_clean",
+    "SF_USER_old": "armukherjee",
+    "SF_USER": "########",
+    "SF_PASSWORD": "######@123",
+    "SF_ACCOUNT_old": "uu93982.us-east-1",
+    "SF_ACCOUNT": "####.us-###-9",
+    "SF_DATABASE_old": "BQ2SNOWFLAKE",
+    "SF_DATABASE": "bq2snowflake_db",
+    "SF_SCHEMA_old": "PUBLIC",
+    "SF_SCHEMA": "bq2snowflake_sh",
+    "SF_TABLE": "test_table_from_bq_2",
+    "SF_TABLE_old": "test_table_from_bq"
+}

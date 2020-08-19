@@ -1,0 +1,53 @@
+{
+	"bigquery":
+    {
+		"project_id": "sublime-mission-251813",
+        "data_set": "bq2snowflake",
+		"source_table": "iowa_liquor_sales_cdc",
+		"sink_bucket": "gs://bq2snowflake/bq-sink/iowa_liquor_sales",
+		"columns":[
+			"invoice_and_item_number",
+			"date",
+			"store_number",
+			"store_name",
+			"address",
+			"city",
+			"zip_code",
+			"store_location",
+			"county_number",
+			"county",
+			"category",
+			"category_name",
+			"vendor_number",
+			"vendor_name",
+			"item_number",
+			"item_description",
+			"pack",
+			"bottle_volume_ml",
+			"state_bottle_cost",
+			"state_bottle_retail",
+			"bottles_sold",
+			"sale_dollars",
+			"volume_sold_liters",
+			"volume_sold_gallons"
+		]
+	},
+    "data-flow":
+    {
+    "project":"sublime-mission-251813",
+    "region": "us-central1",
+    "staging_location":"gs://bq2snowflake/stage",
+    "temp_location":"gs://bq2snowflake/temp"
+    },
+    "snow-flake":
+    {
+    "SF_USER": "###########",
+    "SF_PASSWORD": "###@@###",
+    "SF_ACCOUNT": "########",
+    "SF_DATABASE": "######",
+    "SF_SCHEMA": "####",
+    "SF_TABLE": "######",
+    "SF_TABLE_STG": "#####",
+    "SF_STAGE": "######"
+    }
+}

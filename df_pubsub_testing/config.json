@@ -1,0 +1,21 @@
+{
+    "BASE_URL": "/cf2gce_index",
+    "PORT": 8080,
+    "WATCH_BUCKET": "gs://logs-check",
+    "PROJECT_ID":  "sublime-mission-251813",
+    "PS_TOPIC_NAME": "bucker_watcher01",
+    "PS_SUBSCRIPTION_NAME": "bucker_watcher01_subs",
+    "PS_LOG_FILE": "gcs_poll_log.txt",
+    "data-flow":
+    {
+    "project":"sublime-mission-251813",
+    "region": "us-central1",
+    "staging_location":"gs://etl_accelerator/stage",
+    "temp_location":"gs://etl_accelerator/temp"
+    },
+    "big-query":
+    {
+    "project":"sublime-mission-251813",
+    "output_table":"sublime-mission-251813.etl_accelerator.messages_check"
+    }
+}

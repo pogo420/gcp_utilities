@@ -1,0 +1,15 @@
+{
+    "data-flow":
+    {
+    "project":"sublime-mission-251813",
+    "region": "us-central1",
+    "staging_location":"gs://etl_accelerator/stage",
+    "temp_location":"gs://etl_accelerator/temp"
+    },
+    "big-query":
+    {
+    "project":"sublime-mission-251813",
+    "input_table":"sublime-mission-251813.etl_accelerator.input_clean",
+    "output_table":"sublime-mission-251813.etl_accelerator.output"
+    }
+}

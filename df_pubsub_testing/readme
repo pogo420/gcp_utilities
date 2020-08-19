@@ -1,0 +1,1 @@
+python df2bq_test.py --runner DataflowRunner --streaming --experiments=allow_non_updatable_job
